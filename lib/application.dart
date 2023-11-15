@@ -184,10 +184,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     }),
               ),
               MaterialButton(
-                height: MediaQuery.of(context).size.width * 0.43,
+                height: MediaQuery.of(context).size.width * 0.28,
+                minWidth: MediaQuery.of(context).size.width * 0.25,
                 shape: CircleBorder(
                   side: BorderSide(
-                    width: MediaQuery.of(context).size.width * 0.43 / 15,
+                    width: MediaQuery.of(context).size.width * 0.43 / 50,
                     color: Colors.red,
                     style: BorderStyle.solid,
                   ),
