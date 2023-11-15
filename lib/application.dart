@@ -79,13 +79,11 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     _gyroscopeStream = gyroscopeEvents;
     accelerometerEvents.listen((AccelerometerEvent event) {
-      Future.delayed(const Duration(milliseconds: 500), () {
         if (CameraState.camera && !checkDeviceOrientation(event)) {
           CameraState.camera = false;
         } else if (!CameraState.camera && checkDeviceOrientation(event)) {
           CameraState.camera = true;
         }
-      });
     });
   }
 
